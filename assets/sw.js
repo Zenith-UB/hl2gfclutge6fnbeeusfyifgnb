@@ -1,12 +1,8 @@
 const CACHE = "hl2-shell-v3";
 
 const PRECACHE = [
-	"./",
-	"./index.html",
 	"../assets/hl2_launcher.js",
 	"../assets/hl2_launcher.wasm",
-	"../assets/icon-192.png",
-	"../assets/icon-512.png",
 ];
 
 self.addEventListener("install", (event) => {
