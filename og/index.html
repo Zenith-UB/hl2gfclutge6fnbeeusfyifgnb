@@ -5,24 +5,17 @@
     <meta charset="utf-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title>bro get out</title>
-    <link href="manifest.webmanifest" rel="manifest">
     <meta content="#111111" name="theme-color">
-    <link href="assets/icon-192.png" rel="apple-touch-icon">
+    <link href="../assets/icon-192.png" rel="apple-touch-icon">
     <style>
         body{font-family:arial;margin:0;padding:none}.emscripten{padding-right:0;margin-left:auto;margin-right:auto;display:block}div.emscripten{text-align:center}div.emscripten_border{border:1px solid #000}canvas.emscripten{border:0 none;background-color:#000}#emscripten_logo{display:inline-block;margin:0;padding:6px;width:265px}.spinner{height:30px;width:30px;margin:0;margin-top:20px;margin-left:20px;display:inline-block;vertical-align:top;-webkit-animation:rotation .8s linear infinite;-moz-animation:rotation .8s linear infinite;-o-animation:rotation .8s linear infinite;animation:rotation .8s linear infinite;border-left:5px solid #ebebeb;border-right:5px solid #ebebeb;border-bottom:5px solid #ebebeb;border-top:5px solid #787878;border-radius:100%;background-color:#bdd72e}@-webkit-keyframes rotation{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotation{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}@-o-keyframes rotation{from{-o-transform:rotate(0)}to{-o-transform:rotate(360deg)}}@keyframes rotation{from{transform:rotate(0)}to{transform:rotate(360deg)}}#status{display:inline-block;vertical-align:top;margin-top:30px;margin-left:20px;font-weight:700;color:#787878}#progress{height:20px;width:300px}#controls{display:inline-block;float:right;vertical-align:top;margin-top:30px;margin-right:20px}#output{width:100%;height:200px;margin:0 auto;margin-top:10px;border-left:0;border-right:0px;padding-left:0;padding-right:0;display:block;background-color:#000;color:#fff;font-family:'Lucida Console',Monaco,monospace;outline:0}
     </style>
     <style>
         body{background:#111;color:#fff}body #emscripten_logo{width:100px}body.pre-game #controls,body.pre-game #progress,body.pre-game #spinner,body.pre-game #status,body.pre-game .emscripten_border{display:none!important}#game-select{text-align:center;margin:24px auto}#game-select .game-btn{display:block;position:relative;margin:12px auto;width:420px;max-width:90%;cursor:pointer;border-radius:2px;overflow:hidden;line-height:0;transition:transform .1s ease}#game-select .game-btn img{display:block;width:100%}#game-select .game-btn::after{content:"";position:absolute;left:0;right:0;bottom:0;height:50%;background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,0));opacity:0;transition:opacity .1s ease;pointer-events:none}#game-select .game-btn:hover{transform:scale(1.03)}#game-select .game-btn:hover::after{opacity:1}
     </style>
-    <script src="https://analytics.proudparrot2.com/js/script.js" data-domain="hl2.slqnt.dev" defer=""></script>
 </head>
 
-<body class=""><img alt="" src="assets/hl2.png" id="emscripten_logo">
-    <div id="game-select" style="display: none;">
-        <div class="game-btn" onclick="pickGame(&quot;hl2&quot;)"><img alt="Half-Life 2" src="assets/hl2wide.webp"></div>
-        <div class="game-btn" onclick="pickGame(&quot;ep1&quot;)"><img alt="Half-Life 2: Episode One" src="assets/ep1wide.webp"></div>
-        <div class="game-btn" onclick="pickGame(&quot;ep2&quot;)"><img alt="Half-Life 2: Episode Two" src="assets/ep2wide.webp"></div>
-    </div>
+<body class=""><img alt="" src="../assets/hl2.png" id="emscripten_logo">
     <div class="spinner" id="spinner" style="display: none;"></div>
     <div class="emscripten" id="status"></div><span id="controls"><span><input onclick="document.getElementById(&quot;canvas&quot;).requestFullscreen().catch((()=&gt;{}))" type="button" value="Fullscreen"> </span><span><input onclick="update()" type="button" value="Clear Cache" title="Clear saved files and update to the latest"></span></span>
     <div class="emscripten"><progress id="progress" max="1" value="0" hidden=""></progress></div>
